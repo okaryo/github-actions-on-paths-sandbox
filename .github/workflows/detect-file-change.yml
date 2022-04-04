@@ -1,4 +1,4 @@
-name: dipatch
+name: ditect file change
 
 on:
   push:
@@ -8,8 +8,8 @@ on:
       - './sample.txt'
 
 jobs:
-  dispatch:
+  detect-file-change:
     runs-on: ubuntu-latest
     steps:
-      - name: dispatch
-        run: echo dispatch!
+      - name: detect
+        run: echo detect file change!
