@@ -1,4 +1,4 @@
-name: dispatch record updated
+name: dipatch
 
 on:
   push:

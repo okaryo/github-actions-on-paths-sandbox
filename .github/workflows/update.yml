@@ -1,4 +1,4 @@
-name: generate book record
+name: update sample.txt
 
 on:
   push:
