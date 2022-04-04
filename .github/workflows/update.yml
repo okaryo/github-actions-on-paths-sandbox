@@ -1,0 +1,26 @@
+name: generate book record
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: update text
+        run: |
+          date > sample.txt
+      - name: setup git
+        run: |
+          git config --local user.email "okaryotr@gmail.com"
+          git config --local user.name "okaryo"
+          git config --local pull.rebase false
+      - name: git commit and push
+        run: |
+          git add .
+          git commit -m "[update] text"
+          git pull
+          git push origin main
