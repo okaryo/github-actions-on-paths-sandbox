@@ -3,7 +3,7 @@ name: ditect file change
 on:
   push:
     paths:
-      - './sample.txt'
+      - 'sample.txt'
 
 jobs:
   detect-file-change:
